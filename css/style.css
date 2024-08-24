@@ -158,7 +158,7 @@ margin-left: .6em;
   .landpage{
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(transparent,#b56ff679), url(../image/bg.png);
+    background-image: linear-gradient(transparent,#b56ff679), url(./assets/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
