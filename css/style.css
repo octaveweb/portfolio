@@ -8,6 +8,7 @@
     padding: 0;
 }
 
+
 :root {
     --theme: 	#8000ffe2;
     --theme-light-bg: #4b6fdd42;
@@ -34,6 +35,9 @@
     --s: 100px; 
     --c: black; 
 
+}
+html {
+  scroll-behavior: smooth;
 }
 nav{
     height: 12vh;
@@ -447,7 +451,7 @@ font-size: 18px;
   right: -100%;
   top: 0;
   transition: var(--tr-slow2);
-  z-index: 10;
+  z-index: 55;
   
 }
 #menu-box nav{
@@ -578,11 +582,12 @@ transition: var(--tr-mid);
   top: 53%;
   padding: 20px 20px 20px;
   transition: var(--tr-mid);
-  z-index: 10;
+  z-index: 50;
 }
 
 .settings:hover{
   background-color: #ffffff20;
+  backdrop-filter: blur(20px);
 }
 .settings h3{
   text-transform: capitalize;
@@ -859,6 +864,7 @@ bottom: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center center;
+  overflow: hidden;
 
   }
   .imageOwner{
@@ -866,10 +872,22 @@ bottom: 30px;
     justify-content: center;
     align-items: center;
     width: 50vw;
+    position: relative;
   }
-  .imageOwner img{
+  .imageOwner .blurRobot{
+    position: absolute;
+    transform: translate(-50%, -50%) scaleY(1.1);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    filter: blur(60px);
+    z-index: 5;
+    opacity: 50%;
+  }
+  #imageRobot{
     height: 500px;
-    filter:drop-shadow(-9px 16px 21px #8000ff6f );
+    position: relative;
+    z-index: 10;
   }
 
  .hello{
@@ -1078,13 +1096,15 @@ bottom: 30px;
     content: "";
     height: 75px;
     width: 75px;
-    background-color: var(--t2);
+    background-color: var(--theme);
     border-radius: 50%;
     position: absolute;
     top: -43%;
     left: 23px;
     z-index: 3;
-    box-shadow: 0px 0px 0px 0px var(--t2);
+    box-shadow: 0px 0px 0px 0px var(--theme);
+    filter: blur(15px);
+    opacity: 30%;
   }
   #ownerData span{
     font-size: 18px;
