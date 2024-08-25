@@ -35,9 +35,15 @@
     --s: 100px; 
     --c: black; 
 
+    --cursor-size: 55px;
+    --cursor-hover-scale: 1.5;
 }
 html {
   scroll-behavior: smooth;
+}
+body{
+  position: relative;
+  z-index: 80;
 }
 nav{
     height: 12vh;
@@ -809,7 +815,7 @@ bottom: 30px;
   font-weight: 200;
 }
 .card-4 > div span p:nth-child(1){
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   color: var(--theme);
@@ -882,7 +888,7 @@ bottom: 30px;
     width: 100%;
     filter: blur(60px);
     z-index: 5;
-    opacity: 50%;
+    opacity: 20%;
   }
   #imageRobot{
     height: 500px;
@@ -1110,4 +1116,46 @@ bottom: 30px;
     font-size: 18px;
     font-weight: 200;
     margin-left: 0px;
+  }
+ 
+
+  #cursor {
+    height: var(--cursor-size);
+    width: var(--cursor-size);
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px solid #080808;
+    z-index: 99;
+    transition: transform 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+  }
+
+  #cursor2 {
+    height: 8px;
+    width: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #0808089f;
+    z-index: 99;
+  }
+
+  #cursor3 {
+    height: 5px;
+    width: 5px;
+    background-color: var(--t1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 99;
+    opacity: 80%;
   }

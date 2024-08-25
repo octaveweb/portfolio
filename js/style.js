@@ -1,4 +1,48 @@
 {
+    const cursor = document.getElementById("cursor");
+    const cursor2 = document.getElementById("cursor2");
+    const cursor3 = document.getElementById("cursor3");
+
+    const ownerData = document.getElementById("ownerData");
+
+
+    document.addEventListener("mousemove", (e) => {
+      const { clientX: x, clientY: y } = e;
+      cursor.style.left = `${x}px`;
+      cursor.style.top = `${y}px`;
+      cursor2.style.left = `${x}px`;
+      cursor2.style.top = `${y}px`;
+    });
+
+    // ownwr
+
+    ownerData.addEventListener("mousemove",(e)=>{
+        
+        const { clientX: x, clientY: y } = e;
+       
+        cursor3.style.left = `${x}px`;
+        cursor3.style.top = `${y}px`;
+        
+        cursor3.style.display = "block";
+        cursor.style.display = "none";
+        cursor2.style.display = "none";
+        
+    })
+    ownerData.addEventListener("mouseleave",(e)=>{
+        cursor.style.display = "block";
+        cursor2.style.display = "block";
+        cursor3.style.display = "none";
+        
+    })
+
+
+
+
+}
+
+
+
+{
     let menu_icon = document.getElementById("menu-icon"); 
     let robot = document.getElementById("robot"); 
     let menu_back = document.getElementById("menu-back"); 
