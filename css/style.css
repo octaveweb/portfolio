@@ -891,7 +891,7 @@ bottom: 30px;
     width: 100%;
     filter: blur(60px);
     z-index: 5;
-    opacity: 20%;
+    opacity: 50%;
   }
   #imageRobot{
     height: 500px;
