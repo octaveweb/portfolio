@@ -592,7 +592,6 @@ nav {
   width: 30em;
   background-color: transparent;
   backdrop-filter: blur(15px);
-
   position: fixed;
   right: -100%;
   top: 0;

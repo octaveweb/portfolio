@@ -50,7 +50,13 @@
     }
     
     #menu-box ul {
-        width: 56vh;
+        width: 100%;
+        bottom: 15px;
+        
+  font-size: 18px;
+    }
+    .icon-contener {
+        bottom: 15px;
     }
     .landpage {
         flex-flow: column;
