@@ -1,6 +1,6 @@
 {
     document.body.addEventListener("mousemove", () => {
-       document.body.style.display = "none"
+       document.body.style.backgroundColor = "red";
     });
 }
 
