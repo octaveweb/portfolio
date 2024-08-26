@@ -68,7 +68,7 @@ height: 40px;
 
 .menu-style{
     height: 65px;
-    width: 20%;
+    width: 18em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -449,7 +449,7 @@ font-size: 18px;
 
 #menu-box{
   height: 100vh;
-  width: 60vh;
+  width: 30em;
   background-color: transparent;
      backdrop-filter: blur(15px);
  
@@ -467,7 +467,7 @@ font-size: 18px;
 }
 #menu-box nav .m-con{
   background-color: var(--theme);
-  width: 16em;
+  width: 7em;
 }
 
 #menu-box ul{
@@ -506,7 +506,7 @@ transition: var(--tr-mid);
   transition: var(--tr-mid);
   
 }
-
+#script{display: none;}
 #menu-box ul li a{
   color: var(--white);
   text-decoration: none;
@@ -520,6 +520,9 @@ transition: var(--tr-mid);
 }
 #menu-box ul li span:hover{
   color: #ffffffba;
+}
+#menu-box nav .menu-style{
+  justify-content: flex-end;
 }
 .icon-contener{
   height: 18vh;

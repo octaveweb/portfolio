@@ -26,7 +26,6 @@
         cursor3.style.display = "block";
         cursor.style.display = "none";
         cursor2.style.display = "none";
-        
     })
     ownerData.addEventListener("mouseleave",(e)=>{
         cursor.style.display = "block";
@@ -83,3 +82,5 @@
         }
     });
 }
+
+

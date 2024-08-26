@@ -7,6 +7,7 @@
     <title>Prorfolio - Karan Swarnakar</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
         href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
@@ -314,14 +315,14 @@
                         <i class="fa-sharp fa-light fa-arrow-up-right"></i>
             </div>
             <div class="card-4 cards onwer">
-               <div>
-                <i class="fa-sharp fa-light fa-arrow-up-right"></i>
-               </div>
+                <div>
+                    <i class="fa-sharp fa-light fa-arrow-up-right"></i>
+                </div>
                 <div>
                     <span>
                         <p>SAY HELLO!</p>
                         <p>karanswarnakar955@gmail.com</p>
-                    <span>
+                        <span>
                 </div>
             </div>
             <div class="card-5 cards onwer">
@@ -428,8 +429,10 @@
             <h2><span>karan</span></h2>
             <h1>swarnakar</h1>
 
-            <p id="ownerdata"> That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not only reflects who you are and what you stand for, but words that truly land with those that read them, calling your audience in and making them .</p>
-           
+            <p id="ownerdata"> That is where I come in. A lover of words, a wrangler of copy. Here to create copy that
+                not only reflects who you are and what you stand for, but words that truly land with those that read
+                them, calling your audience in and making them .</p>
+
 
 
 
@@ -442,21 +445,21 @@
                 &nbsp;|
                 &nbsp;
                 &nbsp;
-               <span class="coustomer_count c2">
+                <span class="coustomer_count c2">
 
-                   <span>Worldwide client</span>
-               </span>
-               &nbsp;
-               &nbsp;|
-               &nbsp;
-               &nbsp;
-               <span class="coustomer_count c3">
-
-                   <span>Job done successfully</span>
-               </span>
+                    <span>Worldwide client</span>
+                </span>
+                &nbsp;
+                &nbsp;|
                 &nbsp;
                 &nbsp;
-               
+                <span class="coustomer_count c3">
+
+                    <span>Job done successfully</span>
+                </span>
+                &nbsp;
+                &nbsp;
+
             </div>
             <br>
             <br>
@@ -468,20 +471,58 @@
                     </span></button>
 
 
-           
+
             </div>
         </div>
     </section>
-<div id="cursor"></div>
-<div id="cursor2"></div>
-<div id="cursor3"></div>
+    <div id="cursor"></div>
+    <div id="cursor2"></div>
+    <div id="cursor3"></div>
 
 
 
+    
+
+    <script>
+        function loadScript(src) {
+            var script = document.createElement('script');
+            script.src = src;
+            script.async = false; // Ensures scripts are executed in order
+            document.head.appendChild(script);
+        }
+
+        function removeScript(src) {
+            var scripts = document.getElementsByTagName('script');
+            for (var i = scripts.length - 1; i >= 0; i--) {
+                if (scripts[i] && scripts[i].getAttribute('src') !== null && scripts[i].getAttribute('src') === src) {
+                    scripts[i].parentNode.removeChild(scripts[i]);
+                }
+            }
+        }
+
+        function manageScripts() {
+            if (window.innerWidth <= 501) {
+                removeScript('./js/style.js');
+                loadScript('./js/app.js');
+            }else if(window.innerWidth >= 502) {
+                removeScript('./js/app.js');
+                loadScript('./js/style.js');
+            }else {
+                removeScript('./js/app.js');
+                loadScript('./js/style.js');
+            }
+        }
+
+        // Run on initial load
+        manageScripts();
+
+        // Run on window resize
+        window.addEventListener('resize', function() {
+            manageScripts();
+        });
+    </script>
 
 
-
-    <script src="js/style.js"></script>
 </body>
 
 </html>
