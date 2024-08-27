@@ -152,7 +152,7 @@
 
     .services {
         /* height: 210vh; */
-        padding: 10px 0 900px;
+        padding: 10px 0 60em;
     }
     .title-contener {
     
@@ -245,10 +245,10 @@ flex-flow: column;
 
 
 #ownerData {
-    height: 220vh;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 300px 1fr);
+    padding-bottom: 33em;
 }
 
 .imageOwner {
@@ -356,6 +356,8 @@ flex-flow: column;
     gap: 10px;
     position: relative;
     top: 30px;
+    flex-flow: row;
+  flex-wrap: wrap;
   }
 
   .coustomer_count {
