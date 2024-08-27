@@ -151,8 +151,8 @@
 
 
     .services {
-        height: 210vh;
-        padding: 40px 0;
+        /* height: 210vh; */
+        padding: 10px 0 900px;
     }
     .title-contener {
     
