@@ -36,7 +36,7 @@
   --s: 100px;
   --c: black;
 
-  --cursor-size: 55px;
+  --cursor-size: 40px;
   --cursor-hover-scale: 1.5;
 
   --blur: 20px;
@@ -440,7 +440,7 @@ nav {
   justify-content: flex-start;
   align-items: center;
   /* background-color: brown; */
-  gap: 10px;
+  gap: 40px;
   position: relative;
   top: 30px;
 }
@@ -821,7 +821,7 @@ nav {
 
 /* -------------- [services] -------------- */
 .services {
-  padding:100px 20px;
+  padding: 6em 0;
   width: 100%;
   background-color: var(--white);
   overflow: hidden;
@@ -921,7 +921,7 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 71px 84px;
   padding: 20px;
-  transition: var(--tr-slow);
+  transition: var(--tr-mid);
 }
 
 .cards:hover {
@@ -1073,7 +1073,7 @@ nav {
 #ownerData {
   height: 100vh;
   width: 100%;
-  background-color: #ff000036;
+  background-color: #bbbbbb36;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center center;
@@ -1356,4 +1356,233 @@ font-family: var(--cu-f3);
   font-size: 18px;
   font-weight: 200;
   margin-left: 0px;
+}
+
+/* -------------- [AllOvermYdetails] -------------- */
+
+
+.AllOvermYdetails{
+width: 100%;
+background-color: var(--white);
+display: grid;
+grid-template-columns:2fr 3fr;
+grid-template-rows: repeat(1, 1fr);
+align-items: start;
+font-family: var(--cu-f3);
+place-items: center;
+}
+.all-data-maneger{
+  padding: 10em 6em 10em 6em;
+}
+.all-data-maneger p{
+font-size: 20px;
+position: relative;
+z-index: 5;
+}
+.all-data-maneger h1{
+  position: relative;
+}
+.all-data-maneger h1 span{
+font-size: 6vh;
+position: relative;
+z-index: 5;
+}
+.all-data-maneger h1::after{
+  content: "";
+height: 70px;
+width: 70px;
+background-color: var(--theme);
+filter: blur(20px);
+position: absolute;
+top: -2%;left: -2%;
+border-radius: 50%;
+z-index: 3;
+}
+.all-data-maneger ul{
+  
+  display: flex;
+  flex-flow: column;
+  list-style-type: none;
+  gap: 10px;
+  padding: 40px  0 0;
+}
+
+.all-data-maneger ul li button{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  font-size: 1.2vw;
+  font-family: var(--cu-f4);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: var(--tr-mid);
+}
+.all-data-maneger ul li button:hover{
+  color: var(--white);
+  background-color: var(--t1);
+}
+.b_active{
+  color: var(--white);
+  background-color: var(--t1);
+}
+.changes-sector{
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  transition: var(--tr-slow);
+
+}
+.seto{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  transition: var(--tr-slow);
+
+}
+#sector-2,
+#sector-3,
+#sector-4,
+#sector-5{
+  display: none;
+
+}
+.for-alimen-section{
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-flow: column;
+}
+.for-alimen-section h1{
+  padding: 6em  0em 1em 1em;
+}
+.for-alimen-section p{
+  padding:0em  7em 0em 1.5em;
+  font-size: 1.3em;
+  font-family: var(--cu-f4);
+  color: #676767;
+}
+.for-alimen-section p b{
+  color: var(--t1);
+  font-weight: 400;
+}
+.for-alimen-section table{
+  padding: 2em 3em;
+  font-size: 1.5em;
+  font-family: var(--cu-f4);
+}
+
+.for-alimen-section table td:first-child{
+  font-weight: 400;
+  font-family: var(--cu-f3);
+}
+
+.for-alimen-section table td:last-child{
+  padding: .25em 3em;
+  font-family: var(--cu-f3);
+  font-weight: 500;
+}
+.for-alimen-section .workDone{
+  height: 60vh;
+  width: 85%;
+  /* background-color: #0000ff; */
+  margin: 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--cu-f3);
+}
+.for-alimen-section .workDone .cards {
+  background-color: #f5f5f5;
+  margin: 10px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 20px;
+  transition: var(--tr-mid);
+  height: 12em;
+  width: 21em;
+  position: relative;
+  left: 1em;
+}
+.for-alimen-section .workDone .cards:hover {
+  background-color: var(--white);
+}
+.for-alimen-section .workDone .cards ul{
+  margin-left: 1em;
+}
+.s-3 .workDone {
+  margin: 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  left: .5em;
+  padding-bottom: 10em;
+}
+.s-3 .workDone .cards{
+  height: 8em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.s-4 .workDone {
+  margin: 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  left: .5em;
+  padding-bottom: 10em;
+}
+.s-4 .workDone .cards{
+  height: 8em;
+  width: 100%;
+  display: grid;
+  grid-template-columns:4em 1fr ;
+  grid-template-rows: 1fr;
+  height: 5em;
+  width: 13em;
+}
+.s-4 .workDone .cards h3{
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.s-4 .workDone .cards h5{
+  font-weight: 300;
+  font-size: .95em;
+}
+
+.s-4 .workDone {
+  height: 0;
+}
+.s-5 .workDone .cards ul{
+  grid-column: 1 / 3;
+  position: relative;
+  top: 15%;
+} 
+.s-5 .workDone .cards {
+  background-color: #f5f5f5;
+  margin: 10px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 20px;
+  transition: var(--tr-mid);
+  height: 12em;
+  width: 21em;
+  position: relative;
+  left: 1em;
+}
+.s-5 .workDone .cards h5{
+  display: flex;
+  justify-content: flex-end;
+}
+.s-5 .workDone .cards h2{
+  grid-column: 1 / 3;
 }
