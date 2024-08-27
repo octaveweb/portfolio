@@ -821,10 +821,14 @@ nav {
 
 /* -------------- [services] -------------- */
 .services {
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   background-color: var(--white);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 
 .title-contener {
