@@ -821,7 +821,7 @@ nav {
 
 /* -------------- [services] -------------- */
 .services {
-  height: 120vh;
+  padding:100px 20px;
   width: 100%;
   background-color: var(--white);
   overflow: hidden;
