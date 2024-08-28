@@ -413,6 +413,7 @@ flex-flow: column;
                 width: auto;
                 display: flex;
                 font-size: 3.2vw;
+                padding: 15px 29px;
         }
         .all-data-maneger ul{
   
