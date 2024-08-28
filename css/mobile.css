@@ -384,4 +384,69 @@ flex-flow: column;
     filter: blur(45px);
 }
 
+
+
+
+.AllOvermYdetails{
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    font-family: var(--cu-f3);
+    place-items: center;
+    }
+    .all-data-maneger {
+        padding: 3em 3em 0em 3em;
+    }
+    .all-data-maneger h1 span{
+        font-size: 10vw;
+        position: relative;
+        z-index: 5;
+        text-align: center;
+        }
+        .all-data-maneger p{
+            position: relative;
+            z-index: 5;
+            }
+            .all-data-maneger ul li button {
+                width: auto;
+                display: flex;
+                font-size: 3.2vw;
+        }
+        .all-data-maneger ul{
+  
+            display: flex;
+        flex-flow: column;
+        list-style-type: none;
+        gap: 10px;
+        padding: 35px 0 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+          }
+
+          .for-alimen-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            }
+            .for-alimen-section h1{
+                padding: 2em  0em 1em 0em;
+              }
+              .for-alimen-section > p {
+                padding: 0em 1em 0em 1em;
+                text-align: center;
+                font-size: 1.2em;
+            }
+            .for-alimen-section table {
+                padding: 2em 0em;
+                font-size: 0.9em;
+            }
+            
+            .for-alimen-section table td:last-child{
+                padding: .25em .15em;
+                font-family: var(--cu-f3);
+                font-weight: 500;
+            }
 }
