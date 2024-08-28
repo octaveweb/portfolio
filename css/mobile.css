@@ -440,8 +440,8 @@ flex-flow: column;
                 font-size: 1.2em;
             }
             .for-alimen-section table {
-                padding: 2em 0em;
-                font-size: 0.9em;
+                padding: 2em 1em;
+                font-size: 0.7em;
             }
             
             .for-alimen-section table td:last-child{
