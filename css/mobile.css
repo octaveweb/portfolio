@@ -468,7 +468,7 @@ align-items: center;
                display: flex;
                justify-content: flex-end;
             }
-            .s-3 .workDone .cards > h2 {
+            .for-alimen-section .workDone .cards > h2 {
                 font-size: 1.3em;
               text-align: right;
             }
