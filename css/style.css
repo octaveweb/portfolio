@@ -1733,3 +1733,71 @@ transition: var(--tr-mid);
   justify-content: space-between;
   font-family: var(--cu-f3);
 }
+
+
+/* -------------- [Feedback] -------------- */
+
+.feedback{
+  height: 70vh;
+  width: 100%;
+  background-color: var(--white);
+
+}
+
+.feedback >div {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 6rem;
+}
+
+.feedback .display-position .title-contener {
+padding: 0 0 0 0;
+justify-content: stretch;
+}
+
+.feedback .title-contener{
+
+  padding:8rem 4rem 0 0rem;
+  }
+
+.feedback .display-position > div{
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  padding: 1rem;
+  }
+.fed_back_contener{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  padding: 1rem;
+  width: 85%;
+}
+.frd_Card{
+padding: 1rem 1.5rem;
+background-color: transparent;
+font-family: var(--cu-f3);
+}
+.frd_Card > *{
+  padding: 10px 0;
+}
+.frd_Card > div{
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+}
+.frd_Card >  h3{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  
+}
+.frd_Card > div hr{
+  width: 20%;
+}
+.frd_Card > div p{
+  padding: 0 0 0 5px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
