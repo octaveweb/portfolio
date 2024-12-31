@@ -1801,3 +1801,95 @@ font-family: var(--cu-f3);
   line-height: 1.75rem;
   font-weight: 700;
 }
+
+
+
+/* -------------- [Brand] -------------- */
+
+
+.brand {
+  height: 25vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000000;
+  position: relative;
+}
+
+.brand img {
+  padding: 10px 30px;
+  filter: drop-shadow(0px 2px 1px #8000ffe2) brightness(0) invert(1);
+
+  
+}
+/* .brand > div{
+  animation: brand 1s forwards 0.1s infinite linear;
+
+}
+@keyframes brand{
+  0%{
+    transform: translate(-100%);
+  }
+  50%{
+    
+    transform: translate(0%);
+  }
+  100%{
+    transform: translate(100%);
+
+  }
+} */
+.brand .img_h_c {
+  height: 30px;
+}
+
+.myWeb {
+  height: 50px;
+}
+
+.myWeb_2{
+  height: 70px;
+}
+
+.brand::after {
+  content: "";
+  height: 25vh;
+  width: 40%;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  background-image: linear-gradient(-90deg, #0000ff00, #000);
+  pointer-events: none; /* Optional, to ignore interactions */
+}
+
+.brand::before {
+  content: "";
+  height: 25vh;
+  width: 40%;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  background-image: linear-gradient(-90deg, #000, #0000ff00);
+  pointer-events: none; /* Optional, to ignore interactions */
+}
+
+
+/* -------------- [Blog] -------------- */
+
+.blog{
+  height: 100vh;
+  width: 100%;
+  background-color: #00000030;
+}
+.blog .title {
+  justify-content: flex-end;
+}
+.blog .stableing > h3{
+  text-align: center;
+}
+.blog .title h2::after {
+  top: 7%;
+  left: 240px;
+}
+.blog-card{
+  
+}
